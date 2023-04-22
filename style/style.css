@@ -1,13 +1,20 @@
 /* === FONTS === */
 @font-face {
-    font-family: 'Open_Sans';
-    src: url(/my_project/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: 'Open Sans';
+    width: 600;
+    src: url(/fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf);
 }
 
 @font-face {
     font-family: 'Poppins';
     font-weight: 700;
     src: url(/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    src: url(/fonts/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
@@ -40,7 +47,7 @@
     box-sizing: border-box;
 }
  
-h1, h2, h3, h4, h5, li {
+h1, h2, h3, h4, h5, li, p{
     margin: 0;
 }
 
@@ -246,6 +253,79 @@ header .main-info .desc .promo-block .play-block p {
     font-size: 17px;
     color: #686D77;
 }
+/* =========== */
 
+/* === MAIN === */
+
+/* === section: category */
+
+.category .category-header {
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+.category .category-header p {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    color: #5E6282;
+}
+
+
+.category .category-header h2 {
+    margin-top: 10px;
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #14183E;
+}
+
+.category .category-block {
+    margin-top: 68px;
+    justify-content: space-between;
+}
+
+.category .category-block .item {
+    width: 190px;
+    height: 227px;
+    text-align: center;
+}
+
+.category .category-block .item:hover {
+    width: 267px;
+    height: 314px;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 36px;
+    background-image: url(/img/category/RectangleBG.png);
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 0;
+}
+
+.category .category-block .item h5 {
+    margin-top: 29px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #1E1D4C;
+}
+
+.category .category-block .item p {
+    margin-top: 15px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    color: #5E6282;
+}
+
+.category .category-block .item:nth-child(2) img {
+    width: 115px;
+    height: 78px;
+}
+
+/* =========== */
 
 /* =========== */
