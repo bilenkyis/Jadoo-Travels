@@ -80,7 +80,8 @@ a {
     'header'
     'category'
     'top-destinations'
-    'book';
+    'book'
+    'opinions';
 }
 
 header {
@@ -101,6 +102,11 @@ header {
 .book {
     grid-area: book;
     min-height: 492px;
+}
+
+.opinions {
+    grid-area: opinions;
+    min-height: 652px;
 }
 /* =========== */
 
@@ -628,6 +634,120 @@ header .main-info .desc .promo-block .play-block p {
     line-height: 124.5%;
     color: #5E6282;
 }
+
+/* =========== */
+
+/* === section: opinions */
+
+.opinions {
+    padding-top: 200px;
+    min-width: 1165px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.opinions .desc :first-child {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #5E6282;
+    margin-bottom: 8px;
+}
+
+.opinions .desc h2 {
+    width: 409;
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #14183E;
+    margin-bottom: 82px;
+}
+
+.opinions .desc .drops {
+    width: 87px;
+    height: 12px;
+    justify-content: space-between;
+}
+
+.opinions .desc .drops div {
+    width: 12px;
+    height: 12px;
+    background-color: #E5E5E5;
+    border-radius: 100%;
+}
+
+.opinions .desc .drops div:hover {
+    cursor: pointer;
+    background-color: #39425D;
+}
+
+.opinions .client {
+    position: relative;
+    height: 245px;
+    width: 504px;
+    background: #FFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 10px;
+}
+
+.opinions .client .second-opinion {
+    position: absolute;
+    bottom: -31%;
+    z-index: -1;
+    left: 11%;
+    width: 502px;
+    height: 232px;
+    border: 2px solid #F7F7F7;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+    border-radius: 10px;
+}
+
+.opinions .vectors {
+    flex-direction: column;
+    height: 71px;
+    width: 14px;
+    justify-content: space-between;
+}
+
+.opinions .client .first-opinion, .second-opinion {
+    padding: 28px 68px 34px 34px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #5E6282;
+}
+
+.opinions .client img {
+    position: absolute;
+    bottom: 79%;
+    right: 94%;
+}
+
+.opinions .client .first-opinion, .second-opinion :nth-child(1) {
+    margin-bottom: 34px;
+}
+
+.opinions .client .first-opinion :nth-child(2) {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5E6282;
+}
+
+.opinions .client .second-opinion :nth-child(2) {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5E6282;
+}
+
 
 /* =========== */
 
