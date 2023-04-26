@@ -79,7 +79,8 @@ a {
     grid-template-areas: 
     'header'
     'category'
-    'top-destinations';
+    'top-destinations'
+    'book';
 }
 
 header {
@@ -96,6 +97,11 @@ header {
     grid-area: top-destinations;
     min-height: 935px;
 }
+
+.book {
+    grid-area: book;
+    min-height: 492px;
+}
 /* =========== */
 
 /* === Header === */
@@ -107,6 +113,8 @@ header {
 }
 
 header .nav-menu {
+    margin: 0 auto;
+    width: 1160px;
     justify-content: space-between;
     align-items: center;
     padding-top: 48px;
@@ -171,6 +179,8 @@ header option:hover {
 /* === Section: main-info */
 
 header .main-info {
+    margin: 0 auto;
+    width: 1200px;
     justify-content: space-between;
     align-items: center;
 }
@@ -184,6 +194,7 @@ header .main-info .desc > p:first-child {
 }
 
 header .main-info .desc h1 {
+    width: 545px;
     margin-top: 24px;
     background-image: url(/img/header/h1_decore.png);
     background-repeat: no-repeat;
@@ -289,6 +300,8 @@ header .main-info .desc .promo-block .play-block p {
 }
 
 .category .category-block {
+    margin: 0 auto;
+    width: 1228px;
     margin-top: 68px;
     justify-content: space-between;
 }
@@ -349,5 +362,275 @@ header .main-info .desc .promo-block .play-block p {
 }
 
 /* =========== */
+
+/* === section: top-destinations */
+
+.top-destinations-header {
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-destinations-header p:first-child {
+    margin-bottom: 8px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5E6282;
+}
+
+.top-destinations-header h2 {
+    margin-bottom: 60px;
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #14183E;
+}
+
+.top-destinations-block {
+    margin: 0 auto;
+    width: 1102px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-destinations-block .item {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #5E6282;
+}
+
+.top-destinations-block .item .desc {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 23px 0 23px;
+    margin-top: 27px;
+}
+
+.top-destinations-block .item .desc:hover {
+    cursor: pointer;
+    height: 130px;
+    width: 315px;
+    background: #FFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 36px;
+}
+
+.top-destinations-block .item .desc .dimon-secret {
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 30%;
+}
+
+.top-destinations-block .item .desc:hover .dimon-secret {
+    display: block;
+    position: absolute;
+    top: 37px;
+    left: 30%;
+}
+
+.top-destinations-block .item .desc-wrapper {
+    margin-top: 19px;
+    padding: 0 23px 0 23px;
+}
+
+.top-destinations-block .item .desc-wrapper img {
+    float: left;
+    padding-right: 15px;
+}
+
+/* =========== */
+
+/* === section: book */
+
+.book {
+    position: relative;
+    margin: 0 auto;
+    width: 1114px;
+}
+
+.book .trip {
+    margin-left: 118px;
+    width: 370px;
+    min-height: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 26px;
+    padding: 23px;
+}
+
+.book .trip > img {
+    margin-bottom: 26px;
+}
+
+.book .trip .desc h5 {
+    width: 134px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #080809;
+    margin-bottom: 13px;
+}
+
+.book .trip .desc > p {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #84829A;
+    margin-bottom: 21px;
+}
+
+.book .trip .desc nav {
+    width: 139px;
+    justify-content: space-between;
+    margin-bottom: 31px;
+}
+
+.book .trip .desc .going {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book .trip .desc .going .number > img {
+    float: left;
+    margin-right: 15px;
+}
+
+.book .trip .desc .going .number > p {
+    width: 165px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #84829A;
+}
+
+.book .trip .desc .going > img:hover {
+    cursor: pointer;
+}
+
+.book .ongoing {
+    position: absolute;
+    top: 38%;
+    left: 81%;
+    padding: 25px;
+    width: 323px;
+    height: 150px;
+    align-items: flex-start;
+    background: #FFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 18px;
+}
+
+.book .ongoing .desc {
+    margin-left: 11px;
+}
+
+.book .ongoing .desc p:first-child {
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 124.5%;
+    color: #84829A;
+    margin-bottom: 6px;
+}
+
+.book .ongoing .desc h5 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #080809;
+    margin-bottom: 14px;
+}
+
+.book .ongoing .desc :last-child {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    color: #8A79DF;
+}
+
+.book .ongoing .desc :nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.book .ongoing .desc .bar {
+    width: 156px;
+    height: 5px;
+    background-color: rgba(132, 130, 154, .1);
+}
+
+.book .ongoing .desc .bar div {
+    height: 100%;
+    width: 40%;
+    background-color: #8A79DF;
+}
+
+.book .desc > p:first-child {
+    margin-bottom: 15px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5E6282;
+}
+
+.book .desc .book-block .block {
+    margin-left: 21px;
+}
+
+.book .desc h2 {
+    margin-bottom: 31px;
+    width: 511px;
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #14183E;
+}
+
+.book .desc .book-block {
+    flex-direction: column;
+}
+
+.book .desc .book-block .item {
+    width: 495px;
+    align-items: flex-start;
+    margin-bottom: 21px;
+}
+
+.book .desc .book-block .item h5 {
+    margin-bottom: 4px;
+    width: 254px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #5E6282;
+}
+
+.book .desc .book-block .item p {
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 124.5%;
+    color: #5E6282;
+}
+
+/* =========== */
+
+/* === section: book */
 
 /* =========== */
