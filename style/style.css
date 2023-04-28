@@ -83,7 +83,8 @@ a {
     'book'
     'opinions'
     'logos'
-    'subscribe';
+    'subscribe'
+    'footer';
 }
 
 header {
@@ -119,6 +120,11 @@ header {
 .subscribe {
     grid-area: subscribe;
     min-height: 697px;
+}
+
+footer {
+    grid-area: footer;
+    min-height: 450px;
 }
 /* =========== */
 
@@ -296,6 +302,12 @@ header .main-info .desc .promo-block .play-block p {
 
 .category {
     width: 1228px;
+}
+
+.category .pluses {
+    position: absolute;
+    right: 7%;
+    top: 107%;
 }
 
 .category .category-header {
@@ -683,7 +695,6 @@ header .main-info .desc .promo-block .play-block p {
     font-family: 'Volkhov';
     font-weight: 700;
     font-size: 50px;
-    line-height: 64px;
     text-transform: capitalize;
     color: #14183E;
     margin-bottom: 82px;
@@ -758,7 +769,6 @@ header .main-info .desc .promo-block .play-block p {
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 18px;
-    line-height: 27px;
     color: #5E6282;
 }
 
@@ -766,7 +776,6 @@ header .main-info .desc .promo-block .play-block p {
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 18px;
-    line-height: 27px;
     color: #5E6282;
 }
 
@@ -840,7 +849,6 @@ header .main-info .desc .promo-block .play-block p {
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 33px;
-    line-height: 54px;
     text-align: center;
     color: #5E6282;
     margin-bottom: 74px;
@@ -866,7 +874,6 @@ header .main-info .desc .promo-block .play-block p {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
     color: #39425D;
 }
 
@@ -884,7 +891,6 @@ header .main-info .desc .promo-block .play-block p {
     font-family: 'Open Sans';
     font-weight: 500;
     font-size: 17px;
-    line-height: 23px;
     text-align: center;
     color: #FFFFFF;
 }
@@ -902,6 +908,106 @@ header .main-info .desc .promo-block .play-block p {
 
     /* =========== */
 
-/* === section:  */
+/* === footer === */
+
+footer {
+    width: 90%;
+}
+
+footer .wrapper {
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer .wrapper .jadoo h2 {
+    width: 152px;
+    height: 66px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 44px;
+    color: #181E4B;
+    margin-bottom: 19px;
+}
+
+footer .wrapper .jadoo p {
+    width: 207px;
+    height: 48px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 13px;
+    color: #5E6282;
+}
+
+footer .wrapper .footer-nav {
+    width: 474px;
+    justify-content: space-evenly;
+}
+
+footer .wrapper .footer-nav .item {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+footer .wrapper .footer-nav .item ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 86px;
+}
+
+footer .wrapper .footer-nav .item h5 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 21px;
+    color: #080809;
+    margin-bottom: 32px;
+}
+
+footer .wrapper .footer-nav .item li {
+    margin-bottom: 12px; 
+}
+
+footer .wrapper .footer-nav .item li a {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    color: #5E6282;  
+}
+
+footer .wrapper .footer-nav .item li a:hover {
+    text-decoration: underline #5E6282 .1em; 
+}
+
+footer .wrapper .social-media {
+    width: 214px;
+    height: 147px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .wrapper .social-media .icons {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 9px;
+}
+
+footer .wrapper .social-media .applications p {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    color: #5E6282;
+    margin-bottom: 16px;
+}
+
+footer .rights {
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    color: #5E6282;
+}
+
+/* =========== */
+
+/* === section: === */
 
 /* =========== */
