@@ -81,7 +81,9 @@ a {
     'category'
     'top-destinations'
     'book'
-    'opinions';
+    'opinions'
+    'logos'
+    'subscribe';
 }
 
 header {
@@ -91,7 +93,7 @@ header {
 
 .category {
     grid-area: category;
-    min-height: 745px;
+    min-height: 575px;
 }
 
 .top-destinations {
@@ -107,6 +109,16 @@ header {
 .opinions {
     grid-area: opinions;
     min-height: 652px;
+}
+
+.logos {
+    grid-area: logos;
+    min-height: 369px
+}
+
+.subscribe {
+    grid-area: subscribe;
+    min-height: 697px;
 }
 /* =========== */
 
@@ -282,6 +294,10 @@ header .main-info .desc .promo-block .play-block p {
 
 /* === section: category */
 
+.category {
+    width: 1228px;
+}
+
 .category .category-header {
     margin: 0 auto;
     flex-direction: column;
@@ -371,6 +387,10 @@ header .main-info .desc .promo-block .play-block p {
 
 /* === section: top-destinations */
 
+.top-destinations {
+    width: 1102px;
+}
+
 .top-destinations-header {
     flex-direction: column;
     align-items: center;
@@ -458,6 +478,7 @@ header .main-info .desc .promo-block .play-block p {
 /* === section: book */
 
 .book {
+    width: 1158px;
     position: relative;
     margin: 0 auto;
     width: 1114px;
@@ -640,6 +661,7 @@ header .main-info .desc .promo-block .play-block p {
 /* === section: opinions */
 
 .opinions {
+    width: 1165px;
     padding-top: 200px;
     min-width: 1165px;
     justify-content: space-evenly;
@@ -751,6 +773,135 @@ header .main-info .desc .promo-block .play-block p {
 
 /* =========== */
 
-/* === section: book */
+/* === section: logos */
+
+.logos {
+    width: 1073px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 138px;
+}
+
+.logos a {
+    justify-content: center;
+    align-items: center;
+}
+
+.logos img {
+    opacity: .5;
+}
+
+.logos img:hover {
+    opacity: 1;
+}
+
+.logos a:hover {
+    width: 241px;
+    height: 86px;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 10px;
+}
+
+/* =========== */
+
+/* === section: contact */
+
+.subscribe {
+    padding: 111px 0 96px 0;
+    position: relative;
+}
+
+.subscribe .bg-container {
+    position: absolute;
+    left: 80px;
+    height: 407px;
+    width: 1170px;
+    opacity: .7;
+    background-image: url(/img/contact/Group2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subscribe .desc-container {
+    position: absolute;
+    left: 300px;
+}
+
+.subscribe .desc-container .message-logo {
+    position: absolute;
+    left: 102%;
+    bottom: 90%;
+}
+
+.subscribe .desc-container h2 {
+    padding-top: 79px;
+    width: 881px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 54px;
+    text-align: center;
+    color: #5E6282;
+    margin-bottom: 74px;
+}
+
+.subscribe .desc-container form {
+    margin-left: 80px;
+    /* position: relative; */
+}
+
+/* .subscribe .desc-container .email {
+    position: absolute;
+    top: 40%;
+    left: 1.5%;
+} */
+
+.subscribe .desc-container form input {
+    width: 421px;
+    height: 68px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #39425D;
+}
+
+.subscribe .desc-container form button {
+    cursor: pointer;
+    width: 180px;
+    height: 68px;
+    background: 
+    linear-gradient(180deg, 
+    #FF946D 0%, 
+    #FF7D68 100%);
+    border: none;
+    border-radius: 10px;
+    margin-left: 24px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subscribe .desc-container form button:hover {
+    background: #F1A501;
+}
+
+.subscribe .pluses {
+    position: absolute;
+    top: 63%;
+    left: 83%;
+}
+
+
+    /* =========== */
+
+/* === section:  */
 
 /* =========== */
