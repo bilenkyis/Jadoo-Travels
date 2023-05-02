@@ -161,6 +161,7 @@ header .nav-items {
 }
 
 header a:hover {
+    transition: .3s;
     color: #DF6951;
 }
 
@@ -171,25 +172,32 @@ header .btn {
     border: 1px solid #212832;
     border-radius: 5px;
     background-color: #FFF1DA;
+    transition: .5s;
 }
 
 header .btn:hover {
     cursor: pointer;
+    transition: .6s;
     background-color: #DF6951;
     color: wheat;
+    border: none;
 }
 
 header select {
     width: 48px;
     height: 22px;
+    border-radius: 5px;
     font-weight: 500;
     font-size: 17px;
     color: #212832;
     background-color: #FFF1DA;
+    transition: .5s;
 }
 
 header select:hover {
     cursor: pointer;
+    transition: .6s;
+    border: none;
     background-color: #DF6951;
     color: wheat;
 }
@@ -252,9 +260,11 @@ header .main-info .desc .promo-block .btn {
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
+    transition: .5s;
 }
 
 header .main-info .desc .promo-block .btn:hover {
+    transition: .5s;
     background-color: #DF6951;
 }
 
@@ -276,10 +286,13 @@ header .main-info .desc .promo-block .play-block .play_circle {
     height: 52px;
     background-color: #DF6951;
     border-radius: 100%;
+    justify-content: center;
     align-items: center;
+    transition: .5s;
 }
 
 header .main-info .desc .promo-block .play-block .play_circle:hover {
+    transition: .5s;
     background-color: #F1A501;
 }
 
@@ -347,11 +360,17 @@ header .main-info .desc .promo-block .play-block p {
     position: relative;
 }
 
+.category .category-block .item p {
+    width: 181px;
+    height: 78px;
+    margin: 0 auto
+}
+
 .category .category-block .item .img-select {
     display: none;
     position: absolute;
-    top: 250px;
-    right: 223px;
+    top: 203px;
+    right: 205px;
     z-index: -1;
 }
 
@@ -362,15 +381,28 @@ header .main-info .desc .promo-block .play-block p {
 
 
 .category .category-block .item:hover {
-    width: 267px;
-    height: 314px;
+    width: 235px;
+    height: 265px;
     background: #FFFFFF;
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    box-shadow: 0px 100px 80px 
+    rgba(0, 0, 0, 0.02), 
+    0px 64.8148px 46.8519px 
+    rgba(0, 0, 0, 0.0151852), 
+    0px 38.5185px 25.4815px 
+    rgba(0, 0, 0, 0.0121481), 
+    0px 20px 13px 
+    rgba(0, 0, 0, 0.01), 
+    0px 8.14815px 6.51852px 
+    rgba(0, 0, 0, 0.00785185), 
+    0px 1.85185px 3.14815px 
+    rgba(0, 0, 0, 0.00481481);
     border-radius: 36px;
+    transition: .5s;
 }
 
 .category .category-block .item:hover .img-select {
     display: block;
+    transition: .5S;
 }
 
 .category .category-block .item h5 {
@@ -445,39 +477,40 @@ header .main-info .desc .promo-block .play-block p {
 }
 
 .top-destinations-block .item .desc {
-    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 0 23px 0 23px;
     margin-top: 27px;
 }
 
+.top-destinations-block .item .desc .country {
+    justify-content: space-between
+}
+
 .top-destinations-block .item .desc:hover {
+    transition: .5s;
     cursor: pointer;
-    height: 130px;
+    height: 72px;
     width: 315px;
     background: #FFF;
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    box-shadow: 0px 100px 80px 
+    rgba(0, 0, 0, 0.02), 
+    0px 64.8148px 46.8519px 
+    rgba(0, 0, 0, 0.0151852), 
+    0px 38.5185px 25.4815px 
+    rgba(0, 0, 0, 0.0121481), 
+    0px 20px 13px 
+    rgba(0, 0, 0, 0.01), 
+    0px 8.14815px 6.51852px 
+    rgba(0, 0, 0, 0.00785185), 
+    0px 1.85185px 3.14815px 
+    rgba(0, 0, 0, 0.00481481);
     border-radius: 36px;
-}
-
-.top-destinations-block .item .desc .dimon-secret {
-    display: none;
-    position: absolute;
-    top: 37px;
-    left: 30%;
-}
-
-.top-destinations-block .item .desc:hover .dimon-secret {
-    display: block;
-    position: absolute;
-    top: 37px;
-    left: 30%;
 }
 
 .top-destinations-block .item .desc-wrapper {
     margin-top: 19px;
-    padding: 0 23px 0 23px;
 }
 
 .top-destinations-block .item .desc-wrapper img {
@@ -801,10 +834,12 @@ header .main-info .desc .promo-block .play-block p {
 }
 
 .logos img:hover {
+    transition: .4s;
     opacity: 1;
 }
 
 .logos a:hover {
+    transition: .9s;
     width: 241px;
     height: 86px;
     background: #FFFFFF;
@@ -896,7 +931,10 @@ header .main-info .desc .promo-block .play-block p {
 }
 
 .subscribe .desc-container form button:hover {
-    background: #F1A501;
+    background:
+    linear-gradient(180deg, 
+    #ffd001 0%, 
+    #a8a89e 100%);
 }
 
 .subscribe .pluses {
